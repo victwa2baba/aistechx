@@ -1,0 +1,51 @@
+.side-bar{
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  width: 48px;
+  position: fixed;
+  top: 35%;
+  left: 0;
+  z-index: 1;
+}
+
+.side-bar img{
+  height: 24px;
+}
+
+.instagram, .facebook, .linkedin, .telegram, .twitter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 48px;
+  width: 48px;
+  
+}
+
+.instagram .tooltip, .facebook .tooltip, .linkedin .tooltip, .telegram .tooltip, .twitter .tooltip{
+  background-color: rgb(68, 67, 67);
+  color: white;
+  padding: 3px 5px 3px 5px;
+  position: absolute;
+  right: -80px;
+  bottom: -20px;
+  opacity: 0;
+  
+}
+
+.instagram:hover, .facebook:hover, .linkedin:hover, .telegram:hover, .twitter:hover{
+  background-color: lightgray;
+  transition: background-color 0.2s;
+}
+
+.instagram:hover .tooltip, .facebook:hover .tooltip, .linkedin:hover .tooltip, .telegram:hover .tooltip, .twitter:hover .tooltip{
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.4s;
+  transition-delay: 0.2s;
+}
